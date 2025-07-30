@@ -1,0 +1,19 @@
+body
+{
+    background-image: url(../images/bg.jpg);
+    background-size:auto;
+    background-repeat:no-repeat;
+  
+
+}
+.mycard
+{
+ min-height: 350px;
+border-radius: 50px;
+box-shadow:10px 10px 10px rgba(2,0,36,1);
+ background: rgb(2,0,36);
+/* background: background: rgb(2,0,36); */
+background-color:gray;
+box-sizing: border-box;
+padding: 25px;
+}

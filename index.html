@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        #loading {
+            display: none;
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mx-auto mycard">
+                <div class="d-flex justify-content-center my-3">
+                    <input type="text" id="search" class="form-control rounded-pill me-2" placeholder="Enter city name">
+                    <button onclick="weather()" class="btn btn-light rounded-circle">
+                        <img src="images/search.png" height="25" alt="search">
+                    </button>
+                </div>
+                <div id="loading">
+                    <div class="spinner-border text-primary" role="status"></div>
+                </div>
+                <div class="text-center">
+                    <img id="weather-icon" src="images/clouds.png" height="200" alt="">
+                </div>
+                <h1 id="temp" class="text-center">0°C</h1>
+                <h1 id="city" class="text-center">City</h1>
+                <div class="row text-center py-4">
+                    <div class="col-sm-6 d-flex">
+                        <img src="images/humidity.png" height="60" alt="">
+                        <div class="ps-3">
+                            <h4 id="humid">--%</h4>
+                            <h5>Humidity</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex">
+                        <img src="images/wind.png" height="60" alt="">
+                        <div class="ps-3">
+                            <h4 id="wind">-- m/s</h4>
+                            <h6>Wind</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex">
+                        <img src="images/clouds.png" height="50" alt="">
+                        <div class="ps-3">
+                            <h4 id="clouds">--</h4>
+                            <h6>Clouds</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex">
+                        <img src="images/rain.png" height="50" alt="">
+                        <div class="ps-3">
+                            <h4 id="rain">-- mm</h4>
+                            <h6>Rain</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("search").focus();
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
